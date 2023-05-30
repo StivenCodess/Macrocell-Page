@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login Macrocell</title>
+		<!-- FontAwesome -->
+		<script
+			src="https://kit.fontawesome.com/fa45f694d9.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Toastify CSS -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+		<!-- Custom Css -->
+		<link href="../styles/login-style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../styles/default.css">
+		<!-- Toastify JS -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+		<!-- Javascript -->
+		<script src="../js/login.js" defer type="module"></script>
+	</head>
+	<body>
+		<nav class="nav">
+			<h1 class="nav__title">Macrocell</h1>
+
+			<button class="nav__btn">
+				<i class="fa-solid fa-magnifying-glass"></i>
+				<span>Buscar orden</span>
+			</button>
+		</nav>
+
+		<section class="login__container">
+			<form class="form__login" action="" id="form">
+				<label for="user" class="label"
+					>Usuario
+					<input type="text" name="user" id="user" />
+				</label>
+
+				<label for="password" class="label"
+					>Contraseña
+					<input type="password" name="password" id="password" />
+				</label>
+
+				<button class="button__dafault login__btn">Iniciar Sesión</button>
+			</form>
+		</section>
+	</body>
+</html>
+
