@@ -5,15 +5,15 @@ import {
 import { auth } from "../firebase/firebase.js";
 import { showToast } from "./toastify.js";
 
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded", () => {
 	onAuthStateChanged(auth, (user) => {
 		if (!user) {
 			location.replace("pages/login.html");
-			console.log("No existe usuario logueado")
+		} else {
+			showToast("Bienvenido al panel de Macrocell! 📱", 2000);
 		}
-		showToast("Bienvenido al panel de Macrocell! 📱", 2000)
 	});
-})
+});
 
 const logOut = document.getElementById("logOut");
 logOut.addEventListener("click", async () => {
@@ -23,7 +23,3 @@ logOut.addEventListener("click", async () => {
 		console.log(error);
 	}
 });
-
-
-
-
